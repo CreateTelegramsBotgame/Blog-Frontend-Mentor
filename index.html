@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(47, 88%, 63%);
+    font-size: 16px;
+
+    min-height: 100vh;
+  }
+
+  .Card-Blog{
+    box-shadow: 8px 8px 0px black;
+    background-color: hsl(0, 0% ,100%);
+    width: 375px;
+    padding: 10px;
+    border-radius: 9px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    }
+  
+    #Text{
+    background-color: hsl(47, 88%, 63%);
+    width: 70px;
+    border-radius: 4px;
+    height: 30px;
+    display : flex;
+    align-items: center;
+  }
+
+  #active-image{
+    border-radius: 5px;
+  }
+
+  #Main-Text{
+    color: hsl(0, 0%, 42%);
+  }
+
+  #Author {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+  }
+
+  .author{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+  }
+
+  </style>
+</head>
+<body>
+ <div class="Card-Blog">
+   <img src="illustration-article.svg" alt="active-image" id="active-image">
+   <h3 id="Text">Learning</h3>
+     <small>Published 21 Dec 2023</small>
+   <h2>Html & CSS foundations</h2>
+   <p id="Main-Text">These languages are the backblone of every website, defining structure, content, and presentation.</p>
+   <div class="author">
+     <img src="image-avatar.webp" alt="author" id="Author">
+     
+     <span>Greg Hooper</span>
+   </div>
+ </div>
+</body>
+</html>
